@@ -1,0 +1,143 @@
+.section {
+  padding-block: var(--section-py);
+}
+
+.ledgerHead {
+  display: grid;
+  grid-template-columns: 1.05fr 1.35fr 1.15fr 1fr;
+  gap: var(--sp-5);
+  padding: var(--sp-3) var(--frame-pad);
+  border-bottom: 1px solid var(--border-hairline);
+  background-color: var(--surface-canvas);
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+.ledgerRow {
+  display: grid;
+  grid-template-columns: 1.05fr 1.35fr 1.15fr 1fr;
+  gap: var(--sp-5);
+  padding: var(--sp-5) var(--frame-pad);
+  border-bottom: 1px solid var(--border-hairline);
+  align-items: start;
+}
+
+.ledgerRow:last-child {
+  border-bottom: none;
+}
+
+.domainCell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2);
+}
+
+.domainTitle {
+  font-size: var(--text-body);
+  font-weight: 560;
+  color: var(--ink-primary);
+}
+
+.bodyCell {
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--ink-secondary);
+}
+
+.mutedCell {
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--ink-muted);
+}
+
+.stackCell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+}
+
+.trajectoryBlock {
+  margin-top: var(--sp-10);
+}
+
+.subTitle {
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.07em;
+  color: var(--ink-subtle);
+  margin-bottom: var(--sp-3);
+}
+
+.trajectoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-5);
+}
+
+.careerCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.careerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.org {
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.08em;
+  color: var(--ink-subtle);
+}
+
+.role {
+  font-size: var(--text-h3);
+  font-weight: 560;
+  color: var(--ink-primary);
+}
+
+.scope {
+  font-size: var(--text-sm);
+  color: var(--ink-secondary);
+}
+
+.proofList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.proofList li {
+  position: relative;
+  padding-left: var(--sp-4);
+}
+
+.proofList li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 960px) {
+  .ledgerHead {
+    display: none;
+  }
+
+  .ledgerRow,
+  .trajectoryGrid {
+    grid-template-columns: 1fr;
+  }
+}

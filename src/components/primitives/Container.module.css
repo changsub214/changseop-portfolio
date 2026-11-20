@@ -1,0 +1,13 @@
+.base {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--gutter-x);
+}
+
+.editorial {
+  max-width: var(--container-editorial);
+}
+
+.blueprint {
+  max-width: var(--container-blueprint);
+}

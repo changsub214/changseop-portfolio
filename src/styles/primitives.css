@@ -1,0 +1,71 @@
+/* ==========================================================================
+ * TIER 1: PRIMITIVE SCALES
+ * Raw luminance steps, controlled pigments, mathematical spacing & motion.
+ * Never reference these directly inside feature CSS modules; use semantic tokens.
+ * ========================================================================== */
+
+:root {
+  /* Carbon Neutral Dark Scale (Zero Blue / Zero Purple Cast) */
+  --carbon-950: #0a0a09;
+  --carbon-900: #111110;
+  --carbon-850: #161614;
+  --carbon-800: #1d1d1a;
+  --carbon-750: #252521;
+
+  /* Anti-Halation Off-White & Warm Grey Ink Scale */
+  --ash-100: #ededec;
+  --ash-200: #d4d4cf;
+  --ash-400: #9e9e96;
+  --ash-600: #6b6b64;
+  --ash-750: #464640;
+
+  /* Hairline Alpha Ramp */
+  --white-a05: rgba(237, 237, 236, 0.05);
+  --white-a09: rgba(237, 237, 236, 0.09);
+  --white-a16: rgba(237, 237, 236, 0.16);
+  --white-a32: rgba(237, 237, 236, 0.32);
+
+  /* Controlled Micro-Signal Pigments */
+  --amber-500: #d96b27;
+  --amber-a14: rgba(217, 107, 39, 0.14);
+  --amber-a30: rgba(217, 107, 39, 0.30);
+
+  --sage-500: #3b9b6c;
+  --sage-a14: rgba(59, 155, 108, 0.14);
+  --sage-a30: rgba(59, 155, 108, 0.30);
+
+  --mono-500: #ededec;
+  --mono-a12: rgba(237, 237, 236, 0.12);
+  --mono-a28: rgba(237, 237, 236, 0.28);
+
+  /* 4px Base Unit Spacing Scale */
+  --sp-1: 0.25rem;  /* 4px */
+  --sp-2: 0.5rem;   /* 8px */
+  --sp-3: 0.75rem;  /* 12px */
+  --sp-4: 1rem;     /* 16px */
+  --sp-5: 1.25rem;  /* 20px */
+  --sp-6: 1.5rem;   /* 24px */
+  --sp-8: 2rem;     /* 32px */
+  --sp-10: 2.5rem;  /* 40px */
+  --sp-12: 3rem;    /* 48px */
+  --sp-16: 4rem;    /* 64px */
+  --sp-20: 5rem;    /* 80px */
+  --sp-24: 6rem;    /* 96px */
+  --sp-32: 8rem;    /* 128px */
+
+  /* Architectural Corner Geometry (No Bubble Radii) */
+  --rad-0: 0px;
+  --rad-1: 2px;
+  --rad-2: 4px;
+
+  /* Font Stacks */
+  --ff-sans: 'Pretendard Variable', 'Pretendard', 'Inter', -apple-system,
+    BlinkMacSystemFont, system-ui, sans-serif;
+  --ff-mono: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, Menlo, Monaco,
+    Consolas, monospace;
+
+  /* Tactile Engineering Easing */
+  --ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+}

@@ -1,0 +1,41 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background-color: var(--surface-backdrop);
+  display: flex;
+  padding: var(--sp-4);
+  overflow-y: auto;
+}
+
+.sheetAlign {
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: clamp(1rem, 4vh, 2.5rem);
+}
+
+.consoleAlign {
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: clamp(3rem, 11vh, 6.5rem);
+}
+
+.sheetPanel {
+  width: 100%;
+  max-width: 68rem;
+  background-color: var(--surface-panel);
+  border: 1px solid var(--border-strong);
+}
+
+.consolePanel {
+  width: 100%;
+  max-width: 46rem;
+  background-color: var(--surface-panel);
+  border: 1px solid var(--border-strong);
+}
+
+@media (max-width: 768px) {
+  .backdrop {
+    padding: var(--sp-2);
+  }
+}

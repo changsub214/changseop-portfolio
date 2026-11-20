@@ -1,0 +1,68 @@
+/* Zone A: Editorial Restraint (rauno.me / paco.me inspired)
+ * Pure negative space, zero box borders around primary statement. */
+.hero {
+  padding-top: var(--hero-pt);
+  padding-bottom: var(--hero-pb);
+}
+
+.metaLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.05em;
+}
+
+.indexCode {
+  color: var(--ink-faint);
+}
+
+.roleTag {
+  color: var(--ink-muted);
+}
+
+.lensBadge {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--ink-primary);
+  text-transform: uppercase;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--accent-signal);
+}
+
+.headline {
+  font-size: var(--text-display);
+  font-weight: 560;
+  line-height: 1.24;
+  letter-spacing: -0.03em;
+  color: var(--ink-primary);
+  white-space: pre-line;
+  margin-bottom: var(--sp-6);
+}
+
+.manifesto {
+  font-size: var(--text-body-lg);
+  line-height: 1.72;
+  color: var(--ink-muted);
+  max-width: 46rem;
+}
+
+@media (max-width: 720px) {
+  .lensBadge {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .headline {
+    white-space: normal;
+  }
+}

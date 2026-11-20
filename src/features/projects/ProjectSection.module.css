@@ -1,0 +1,48 @@
+.section {
+  padding-block: var(--section-py);
+}
+
+.flagshipStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+}
+
+.archiveBlock {
+  margin-top: var(--sp-10);
+}
+
+.archiveSubLabel {
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.07em;
+  color: var(--ink-subtle);
+  margin-bottom: var(--sp-3);
+}
+
+.tableHead {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1.8fr) minmax(0, 0.9fr) minmax(0, 0.8fr) 4.5rem;
+  gap: var(--sp-4);
+  padding: var(--sp-2) var(--sp-4);
+  border-bottom: 1px solid var(--border-hairline);
+  background-color: var(--surface-canvas);
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+.alignRight {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .tableHead {
+    grid-template-columns: 4rem minmax(0, 1fr) auto;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+}

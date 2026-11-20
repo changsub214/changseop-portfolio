@@ -1,0 +1,28 @@
+/* ==========================================================================
+ * TIER 3: TYPOGRAPHY RECIPES
+ * Disciplined editorial display + tabular monospace engineering telemetry.
+ * ========================================================================== */
+
+:root {
+  --text-display: clamp(1.9rem, 3.6vw, 3.05rem);
+  --text-h2: clamp(1.35rem, 2.1vw, 1.75rem);
+  --text-h3: clamp(1.06rem, 1.4vw, 1.25rem);
+  --text-body-lg: clamp(1rem, 1.15vw, 1.1rem);
+  --text-body: 0.9375rem;     /* 15px */
+  --text-sm: 0.84375rem;      /* 13.5px */
+  --text-mono-sm: 0.75rem;    /* 12px */
+  --text-mono-xs: 0.6875rem;  /* 11px */
+}
+
+.mono-index {
+  font-family: var(--ff-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-subtle);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

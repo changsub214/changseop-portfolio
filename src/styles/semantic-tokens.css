@@ -1,0 +1,71 @@
+/* ==========================================================================
+ * TIER 2: SEMANTIC DESIGN CONTRACT
+ * All components consume ONLY these semantic variables.
+ * Theme / density adjustments happen exclusively via root attributes here.
+ * ========================================================================== */
+
+:root {
+  /* Surface Luminance Ladder */
+  --surface-canvas: var(--carbon-950);
+  --surface-panel: var(--carbon-900);
+  --surface-elevated: var(--carbon-850);
+  --surface-interactive: var(--carbon-800);
+  --surface-active: var(--carbon-750);
+  --surface-backdrop: rgba(8, 8, 7, 0.82);
+
+  /* 1px Structural Hairlines */
+  --border-subtle: var(--white-a05);
+  --border-hairline: var(--white-a09);
+  --border-strong: var(--white-a16);
+  --border-focus: var(--white-a32);
+
+  /* Typography Ink Hierarchy */
+  --ink-primary: var(--ash-100);
+  --ink-secondary: var(--ash-200);
+  --ink-muted: var(--ash-400);
+  --ink-subtle: var(--ash-600);
+  --ink-faint: var(--ash-750);
+
+  /* Default Signal Accent: Industrial Amber (#D96B27) */
+  --accent-signal: var(--amber-500);
+  --accent-signal-soft: var(--amber-a14);
+  --accent-signal-line: var(--amber-a30);
+
+  /* Hybrid Editorial + Blueprint Layout Rhythm */
+  --container-editorial: 54rem;   /* 864px — focused reading measure */
+  --container-blueprint: 74rem;   /* 1184px — wide architectural frames */
+  --gutter-x: clamp(1.25rem, 4vw, 3rem);
+
+  --hero-pt: clamp(5rem, 11vh, 8.5rem);
+  --hero-pb: clamp(3.5rem, 7vh, 5.5rem);
+  --section-py: clamp(3.75rem, 7vh, 6rem);
+  --frame-pad: clamp(1.25rem, 2.4vw, 2rem);
+  --radius-frame: var(--rad-1);
+  --header-h: 3.25rem;
+}
+
+/* Zero-Code Accent Swaps via siteLayoutConfig.theme.accentPreset */
+[data-accent='monochrome'] {
+  --accent-signal: var(--mono-500);
+  --accent-signal-soft: var(--mono-a12);
+  --accent-signal-line: var(--mono-a28);
+}
+
+[data-accent='sage'] {
+  --accent-signal: var(--sage-500);
+  --accent-signal-soft: var(--sage-a14);
+  --accent-signal-line: var(--sage-a30);
+}
+
+/* Zero-Code Density Swaps via siteLayoutConfig.theme.densityPreset */
+[data-density='airy'] {
+  --hero-pt: clamp(6.5rem, 14vh, 10rem);
+  --section-py: clamp(5rem, 10vh, 7.5rem);
+  --frame-pad: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+[data-density='compact'] {
+  --hero-pt: clamp(3.5rem, 7vh, 5.5rem);
+  --section-py: clamp(2.5rem, 5vh, 4rem);
+  --frame-pad: clamp(1rem, 1.8vw, 1.5rem);
+}

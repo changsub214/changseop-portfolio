@@ -1,0 +1,104 @@
+.canvasWrap {
+  width: 100%;
+  background-color: var(--surface-canvas);
+  border: 1px solid var(--border-hairline);
+}
+
+.previewWrap {
+  padding: var(--sp-2);
+}
+
+.interactiveWrap {
+  padding: var(--sp-3);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.edge {
+  stroke: var(--border-strong);
+  stroke-width: 1.25;
+}
+
+.edgeActive {
+  stroke: var(--accent-signal);
+  stroke-width: 1.6;
+}
+
+.arrowPath {
+  fill: var(--ink-subtle);
+}
+
+.arrowActivePath {
+  fill: var(--accent-signal);
+}
+
+.edgeLabel {
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  fill: var(--ink-subtle);
+  letter-spacing: 0.04em;
+}
+
+.edgeLabelActive {
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  fill: var(--ink-primary);
+  letter-spacing: 0.04em;
+}
+
+.nodeInteractive {
+  cursor: pointer;
+}
+
+.nodeBox {
+  fill: var(--surface-panel);
+  stroke: var(--border-strong);
+  stroke-width: 1;
+  transition: stroke var(--dur-fast) var(--ease-snap);
+}
+
+.nodeInteractive:hover .nodeBox {
+  stroke: var(--ink-muted);
+}
+
+.nodeBoxActive {
+  fill: var(--surface-interactive);
+  stroke: var(--ink-primary);
+  stroke-width: 1.35;
+}
+
+.signalLed {
+  fill: var(--accent-signal);
+}
+
+.nodeCode {
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  fill: var(--ink-subtle);
+  letter-spacing: 0.05em;
+}
+
+.nodeCodeActive {
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  fill: var(--accent-signal);
+  letter-spacing: 0.05em;
+}
+
+.nodeTitle {
+  font-family: var(--ff-sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  fill: var(--ink-secondary);
+}
+
+.nodeTitleActive {
+  font-family: var(--ff-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  fill: var(--ink-primary);
+}
